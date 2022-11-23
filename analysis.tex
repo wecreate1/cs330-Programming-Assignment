@@ -1,0 +1,29 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{fontenc}
+\usepackage{graphicx}
+
+% \usepackage[dvips]{hyperref}
+
+\date{11/15/22}
+
+\begin{document}
+
+\section{Prediction}
+
+The chance any of the first five characters the final correct character is $0\%$.
+
+The chances the sixth most recent character is correct is $10\%$; the sixth and fifth most recent characters $1\%$; sixth, fifth, and fourth $0.1\%$; sixth, fifth, fourth, and third $0.01\%$; sixth to second $0.001\%$; and sixth to first $0.0001\%$.
+
+The chance for an input to be the final character in the unlock sequence is therfore $0.0001\%$ after $5$ characters have been entered.
+
+The average time for the code to be guessed should then be ${1\over0.000001}+5=1000005$ seconds or approximatly $4.63$ hours.
+
+\section{Reults}
+
+After 33857348790 input characters attempts and 33890 unlocks, my code unlocked after an average of 999036 characters. An error rate of 0.0009689\%.
+
+\end{document}

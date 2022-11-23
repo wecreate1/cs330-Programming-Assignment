@@ -1,0 +1,37 @@
+@startuml
+hide empty description
+
+[*] --> NoCorrect
+
+state "No Correct Characters" as NoCorrect
+state "1 Correct Characters" as OneCorrect
+state "2 Correct Characters" as TwoCorrect
+state "3 Correct Characters" as ThreeCorrect
+state "4 Correct Characters" as FourCorrect
+state "All Correct Characters" as AllCorrect
+
+NoCorrect -down-> OneCorrect : "1"
+NoCorrect --> NoCorrect : NOT "1"
+
+OneCorrect -down-> TwoCorrect : "0"
+OneCorrect -> OneCorrect : "1"
+OneCorrect -up-> NoCorrect : NOT "0" AND NOT "1"
+
+TwoCorrect -down-> ThreeCorrect : "3"
+TwoCorrect -up-> OneCorrect : "1"
+TwoCorrect -up-> NoCorrect : NOT "3" AND NOT "1"
+
+ThreeCorrect -down-> FourCorrect : "4"
+ThreeCorrect -up-> OneCorrect : "1"
+ThreeCorrect -up-> NoCorrect : NOT "4" AND NOT "1"
+
+FourCorrect -down-> AllCorrect : "0"
+FourCorrect -up-> OneCorrect : "1"
+FourCorrect -up-> NoCorrect : NOT "0" AND NOT "1"
+
+AllCorrect -up-> NoCorrect : "1"/UNLOCK
+AllCorrect -up-> NoCorrect : "4"/LOCK
+AllCorrect -up-> NoCorrect : NOT "1" AND NOT "4"
+
+@enduml
+
