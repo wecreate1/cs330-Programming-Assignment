@@ -5,7 +5,7 @@ Unlock code: `103401`
 
 Lock code: `103404`
 
-Testing on Ubuntu is requested.
+This has been tested on Kubuntu 22.04 and testing on Ubuntu 22.04 is requested.
 
 Dependencies
 ------------
