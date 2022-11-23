@@ -2,6 +2,7 @@ CS 330 Programming Assignment
 =============================
 
 Unlock code: `103401`
+
 Lock code: `103404`
 
 Testing on Ubuntu is requested.
