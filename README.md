@@ -64,7 +64,6 @@ To run unit tests after building the project, run the following commands:
 
 ```sh
 meson test -C builddir
-ninja coverage -C builddir
 ```
 
 Test Coverage
