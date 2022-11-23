@@ -11,7 +11,9 @@ Dependencies
 ------------
 
 Build system: meson
+
 Build system backend: ninja
+
 Unit Test Coverage (optional): gcovr
 
 And other system dependencies.
