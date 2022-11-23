@@ -44,9 +44,9 @@ To run the program after building the project, run the following commands:
 ./builddir/main
 ```
 
-The program can be exited by sending a SIGINT (Ctrl-C) or EOT(Ctrl-D).
+The program can be exited by sending a SIGINT (Ctrl-C) or EOT (Ctrl-D).
 
-Note: the program does not echo the input.
+**Note**: the program does not echo the input.
 
 The program created for part 2 of the assignment can be run with the following
 commands:
